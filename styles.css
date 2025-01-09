@@ -1,89 +1,57 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: sans-serif;
+    background-color: #111; /* Dark background */
+    color: #fff; /* Light text */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #333;
+    background-color: #336699; /* Baby blue header */
     color: #fff;
+    text-align: center;
     padding: 20px 0;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header h1 {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 section {
-    padding: 20px 0;
-}
-
-h2 {
-    text-align: center;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #222; /* Slightly lighter dark gray for sections */
 }
 
-.portfolio-items {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+h1, h2 {
+    color: #fff;
 }
 
-.portfolio-item {
-    width: 30%;
-    margin: 10px 0;
-    text-align: center;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
+.blog-post {
+    border-radius: 10px;
+    background-color: #336699; /* Baby blue for blog posts */
     padding: 10px;
     margin-bottom: 10px;
 }
 
-form button {
-    display: block;
-    width: 100%;
+footer {
+    text-align: center;
     padding: 10px;
-    background: #333;
+    background-color: #336699; /* Baby blue footer */
     color: #fff;
-    border: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design (adjust as needed) */
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
 }
