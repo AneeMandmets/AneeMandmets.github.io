@@ -55,3 +55,9 @@ a:hover {
         padding: 10px;
     }
 }
+
+.video-container {
+    margin: 20px 0; /* Add some margin around the video */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Hide any overflow from the iframe */
+}
