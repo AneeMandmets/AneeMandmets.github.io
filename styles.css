@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #336699; /* Baby blue header */
+    background-color: #6e98c2; /* Baby blue header */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -17,7 +17,7 @@ header {
 
 section {
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 40px;
     border-radius: 10px;
     background-color: #222; /* Slightly lighter dark gray for sections */
 }
@@ -28,7 +28,7 @@ h1, h2 {
 
 .blog-post {
     border-radius: 10px;
-    background-color: #336699; /* Baby blue for blog posts */
+    background-color: #6e98c2; /* Baby blue for blog posts */
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -36,7 +36,7 @@ h1, h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #336699; /* Baby blue footer */
+    background-color: #6e98c2; /* Baby blue footer */
     color: #fff;
 }
 
