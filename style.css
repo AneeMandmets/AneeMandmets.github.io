@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e7dfd8;
+    color: #231f20;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improves readability */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: transparent;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav a {
+    color: #231f20;
+    text-decoration: none;
+    margin: 0 auto;
+    background-color: #dfd1c5;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 5px solid #e7dfd8;
+}
+
+nav a:hover {
+    background-color: #e7dfd8;
+    border: 5px solid #dfd1c5;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #333; /* Slightly lighter dark gray for sections */
+}
+
+footer {
+    background-color: #e7dfd8;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+.introduction-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #dfd1c5;
+    border-radius: 1rem;
+}
+
+.introduction-text {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.intro-pic {
+    width: 600px;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+}
+
+.projects-overview-container {
+    margin-top: 20px;
+    display: flex;
+    background-color: #dfd1c5;
+    border-radius: 1rem;
+}
+
+/* Add more styles as needed for specific elements */
