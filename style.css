@@ -104,6 +104,7 @@ footer {
 }
 
 .project-item {
+    padding: 5px 20px;
     background-color: #e7dfd8;
     border-radius: 0.5rem;
 }
@@ -112,7 +113,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    
 }
 
 .video {
