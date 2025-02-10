@@ -158,7 +158,7 @@ h3 a {
     height: 100%;
     width: 100%;
     font-size: xx-large;
-    font-family: 'Lucida Console'; 
+    font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     text-align: center;
 }
 
