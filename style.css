@@ -59,6 +59,11 @@ p a {
     color: #48423E;
 }
 
+h3 a {
+    color: #231f20;
+    text-decoration: none;
+}
+
 /* HOME specific classes */
 
 .introduction-container {
@@ -88,6 +93,16 @@ p a {
     display: flex;
     background-color: #dfd1c5;
     border-radius: 1rem;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-project-item {
+    padding: 5px 20px;
+    background-color: #e7dfd8;
+    border-radius: 0.5rem;
+    margin: 10px;
+    max-width: 200px;
 }
 
 /* ABOUT specific classes */
@@ -118,6 +133,7 @@ p a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-align: center;
     
 }
 
@@ -134,6 +150,16 @@ p a {
     margin: 0.5rem;
     max-width: 600px;
     padding: 5px 20px;
+}
+
+/* BLOG specific classes */
+
+.coming-soon {
+    height: 100%;
+    width: 100%;
+    font-size: xx-large;
+    font-family: 'Lucida Console'; 
+    text-align: center;
 }
 
 /* Responsive Design */
