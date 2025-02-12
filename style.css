@@ -32,17 +32,25 @@ header {
 nav a {
     color: #231f20;
     text-decoration: none;
-    font-weight: bold;
     margin: 0 auto;
-    background-color: #dfd1c5;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    border: 5px solid #e7dfd8;
+    background: #dfd1c5;;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
 }
 
 nav a:hover {
-    background-color: #e7dfd8;
-    border: 5px solid #dfd1c5;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+nav a:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
 main {
@@ -88,7 +96,8 @@ h3 a {
     width: 100%;
     max-width: 900px;
     border-radius: 0.5rem;
-    margin: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0.5em 0.5em;
 }
 
 .projects-overview-container {
@@ -101,18 +110,27 @@ h3 a {
 }
 
 .home-project-item {
-    padding: 5px 20px;
     background-color: #e7dfd8;
-    border-radius: 0.5rem;
     margin: 10px;
     max-width: 200px;                                                                               
     text-align: center;
-    border: 5px solid #dfd1c5;
+
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
 }
 
 .home-project-item:hover {
-    background-color: #dfd1c5;
-    border: 5px solid #e7dfd8;
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.home-project-item:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
 .cards-container {
@@ -130,10 +148,11 @@ h3 a {
     min-width: 300px;
     max-width: 550px;
     min-height: 254px;
-    margin: 10px;
+    margin: 1rem;
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
+    box-shadow: 0.5em 0.5em;
 }
    
 .tools {
@@ -203,15 +222,47 @@ h3 a {
     max-width: 600px;
     min-width: 400px;
     border-radius: 0.5rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
+    box-shadow: 0.5em 0.5em;
 }
 
 .text-box {
     background-color: #dfd1c5;
     border-radius: 0.5rem;
-    margin: 0.5rem;
+    margin: 1.5rem;
     max-width: 600px;
     padding: 5px 20px;
+    box-shadow: 0.5em 0.5em;
+    border: 3px solid black;
+}
+
+/* CONTACT specific classes */
+
+.email-form {
+    text-align: center;
+    line-height: 3;
+}
+
+.email-button {
+    background: #dfd1c5;;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer; 
+}
+
+.email-button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+.email-button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
 }
 
 /* BLOG specific classes */
