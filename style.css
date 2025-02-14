@@ -314,6 +314,12 @@ h3 a {
 }
 
 @media only screen and (max-width: 767px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
     .introduction-container {
         flex-direction: column;
     }
@@ -352,6 +358,11 @@ h3 a {
     .item2 { grid-row: 2; }
     .item3 { grid-row: 3; }
     .item4 { grid-row: 4; }
+
+    .projects-overview-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
