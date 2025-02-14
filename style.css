@@ -14,7 +14,7 @@ body {
     color: #231f20;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* Improves readability */
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +62,6 @@ footer {
     background-color: #e7dfd8;
     text-align: center;
     padding: 1rem 0;
-
 }
 
 p a {
@@ -73,8 +72,6 @@ h3 a {
     color: #231f20;
     text-decoration: none;
 }
-
-/* HOME specific classes */
 
 .introduction-container {
     display: flex;
@@ -114,7 +111,6 @@ h3 a {
 
 .picture-grid {
     display: grid;
-    
 }
 
 .item1 {
@@ -162,9 +158,8 @@ h3 a {
 .home-project-item {
     background-color: #e7dfd8;
     margin: 10px;
-    max-width: 200px;                                                                               
+    max-width: 200px;
     text-align: center;
-
     padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 18px;
@@ -193,8 +188,6 @@ h3 a {
     border: 3px solid black;
 }
 
-/* Programming languages cards */
-
 .card {
     min-width: 300px;
     max-width: 550px;
@@ -205,17 +198,17 @@ h3 a {
     z-index: 1;
     box-shadow: 0.5em 0.5em;
 }
-   
+
 .tools {
     display: flex;
     align-items: center;
     padding: 9px;
 }
-   
+
 .circle {
     padding: 0 4px;
 }
-   
+
 .box {
     display: inline-block;
     align-items: center;
@@ -224,15 +217,15 @@ h3 a {
     padding: 1px;
     border-radius: 50%;
 }
-   
+
 .red {
     background-color: #ECB5AD;
 }
-   
+
 .yellow {
     background-color: #ECE853;
 }
-   
+
 .green {
     background-color: #C1F3A8;
 }
@@ -241,8 +234,6 @@ h3 a {
     padding: 0 10px;
     line-height: 1;
 }
-
-/* PROJECTS specific classes */
 
 .projects-container {
     background-color: #dfd1c5;
@@ -266,7 +257,6 @@ h3 a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
 }
 
 .video {
@@ -288,8 +278,6 @@ h3 a {
     border: 3px solid black;
 }
 
-/* CONTACT specific classes */
-
 .email-form {
     text-align: center;
     line-height: 3;
@@ -304,7 +292,7 @@ h3 a {
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .email-button:hover {
@@ -317,20 +305,65 @@ h3 a {
     box-shadow: 0.05em 0.05em;
 }
 
-/* BLOG specific classes */
-
 .coming-soon {
     height: 100%;
     width: 100%;
     font-size: xx-large;
-    font-family: 'DepartureMono'; 
+    font-family: 'DepartureMono';
     text-align: center;
 }
 
-/* Responsive Design */
+@media only screen and (max-width: 767px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
 
-@media (max-width: 900px) {
     .introduction-container {
         flex-direction: column;
     }
+
+    .introduction-text {
+        max-width: 350px;
+    }
+
+    .intro-pic {
+        max-width: 350px;
+    }
+
+    .picture-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        width: calc(100% - 6rem);
+        margin: 0 auto;
+    }
+
+    .picture-grid img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .item1, .item2, .item3, .item4 {
+        grid-column: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .item1 { grid-row: 1; }
+    .item2 { grid-row: 2; }
+    .item3 { grid-row: 3; }
+    .item4 { grid-row: 4; }
+
+    .projects-overview-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
 }
