@@ -160,6 +160,8 @@ h3 a {
 .home-project-item {
     display: inline-block;
     background-color: #e7dfd8;
+    text-decoration: none;
+    color: black;
     margin: 1rem;
     max-width: 200px;
     text-align: center;
