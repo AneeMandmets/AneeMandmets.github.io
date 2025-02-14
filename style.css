@@ -382,3 +382,23 @@ h3 a {
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+    body, footer, .card, .projects-container {
+        background-color: black;
+        color: white;
+    }
+
+    nav a, .introduction-container, 
+    .interests-container, 
+    .projects-overview-container, 
+    .cards-container, 
+    .home-project-item, 
+    .project-item,
+    .text-box, 
+    .email-button {
+        background-color: #48423E;
+        color: white;
+        border: 1px solid white;
+    }
+}
