@@ -352,6 +352,7 @@ h3 a {
         grid-column: 1;
         width: 100%;
         overflow: hidden;
+        justify-self: center;
     }
 
     .item1 { grid-row: 1; }
@@ -365,5 +366,8 @@ h3 a {
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .intro-pic {
+        max-width: 600px;
+    }
 
 }
