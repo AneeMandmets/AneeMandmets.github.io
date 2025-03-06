@@ -3,6 +3,45 @@
     src: url(DepartureMono-Regular.woff)
 }
 
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #C1E8FF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s step-end;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #021024; }
+  }
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.3px);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -10,13 +49,15 @@ html, body {
 
 body {
     font-family:'DepartureMono', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #e7dfd8;
-    color: #231f20;
+    background: rgb(193,232,255);
+    background: linear-gradient(0deg, rgba(193,232,255,1) 0%, rgba(243,255,255,1) 100%) fixed;
+    color: #021024;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -30,10 +71,10 @@ header {
 }
 
 nav a {
-    color: #231f20;
+    color: #021024;
     text-decoration: none;
     margin: 0 auto;
-    background: #dfd1c5;;
+    background: #C1E8FF;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
@@ -44,8 +85,8 @@ nav a {
 }
 
 nav a:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
+    transform: translate(-0.15em, -0.15em);
+    box-shadow: 0.25em 0.25em;
 }
 
 nav a:active {
@@ -56,20 +97,21 @@ nav a:active {
 main {
     flex: 1;
     padding: 2rem;
+    margin: 40px;
 }
 
 footer {
-    background-color: #e7dfd8;
+    background-color: #C1E8FF;
     text-align: center;
     padding: 1rem 0;
 }
 
 p a {
-    color: #48423E;
+    color: #052659;
 }
 
 h3 a {
-    color: #231f20;
+    color: #021024;
     text-decoration: none;
 }
 
@@ -78,10 +120,7 @@ h3 a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #dfd1c5;
-    border-radius: 1rem;
     flex-wrap: wrap;
-    border: 3px solid black;
 }
 
 .introduction-text {
@@ -95,18 +134,15 @@ h3 a {
     max-width: 900px;
     border-radius: 0.5rem;
     margin: 1rem;
-    box-shadow: 0.5em 0.5em;
 }
 
 .interests-container {
     margin-top: 20px;
     display: flex;
-    background-color: #dfd1c5;
     border-radius: 1rem;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: 3px solid black;
 }
 
 .picture-grid {
@@ -138,7 +174,6 @@ h3 a {
     max-height: 300px;
     border-radius: 0.5rem;
     margin: 1rem;
-    box-shadow: 0.5em 0.5em;
 }
 
 .interests-text {
@@ -149,17 +184,14 @@ h3 a {
     margin: 20px auto;
     padding: 20px;
     display: flex;
-    background-color: #dfd1c5;
     border-radius: 1rem;
     flex-direction: row;
     justify-content: center;
-    border: 3px solid black;
-
 }
 
 .home-project-item {
     display: inline-block;
-    background-color: #e7dfd8;
+    background-color: #C1E8FF;
     text-decoration: none;
     color: black;
     margin: 1rem;
@@ -170,7 +202,6 @@ h3 a {
     font-size: 18px;
     border: 3px solid black;
     border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
 }
 
 .home-project-item:hover {
@@ -188,9 +219,7 @@ h3 a {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #dfd1c5;
     border-radius: 1rem;
-    border: 3px solid black;
 }
 
 .card {
@@ -201,7 +230,6 @@ h3 a {
     background-color: #F8FBFE;
     border-radius: 8px;
     z-index: 1;
-    box-shadow: 0.5em 0.5em;
 }
 
 .tools {
@@ -241,9 +269,8 @@ h3 a {
 }
 
 .projects-container {
-    background-color: #dfd1c5;
-    border-radius: 1rem;
     padding: 5px 20px;
+    margin: 0 35px;
 }
 
 .projects-title {
@@ -252,10 +279,8 @@ h3 a {
 
 .project-item {
     padding: 5px 20px;
-    background-color: #e7dfd8;
     border-radius: 0.5rem;
-    margin: 10px;
-    border: 3px solid black;
+    margin: 20px 10px;
 }
 
 .project-item-content {
@@ -264,22 +289,27 @@ h3 a {
     justify-content: space-evenly;
 }
 
+.project-item-image {
+    max-width: 600px;
+    min-width: 400px;
+    border-radius: 0.5rem;
+    margin: 1.5rem;
+}
+
 .video {
     width: 100%;
     max-width: 600px;
     min-width: 400px;
     border-radius: 0.5rem;
     margin: 1.5rem;
-    box-shadow: 0.5em 0.5em;
 }
 
 .text-box {
-    background-color: #dfd1c5;
+    background-color: #7DA0CA;
     border-radius: 0.5rem;
     margin: 1.5rem;
     max-width: 600px;
     padding: 5px 20px;
-    box-shadow: 0.5em 0.5em;
     border: 3px solid black;
 }
 
@@ -289,14 +319,13 @@ h3 a {
 }
 
 .email-button {
-    background: #dfd1c5;;
+    background: #C1E8FF;
     font-family: inherit;
     padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 18px;
     border: 3px solid black;
     border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
     cursor: pointer;
 }
 
@@ -384,21 +413,69 @@ h3 a {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, footer, .card, .projects-container {
-        background-color: black;
-        color: white;
+    body, footer {
+        background-color: #021024;
+        color: #8cc7e9;
     }
 
-    nav a, .introduction-container, 
+    body {
+        background: rgb(2,16,36);
+        background: linear-gradient(0deg, rgba(2,16,36,1) 0%, rgba(49,64,135,1) 100%) fixed;
+    }
+
+    .project-item a {
+        color: #8cc7e9;
+    }
+
+    .card {
+        background-color: #8cc7e9;
+        color: #021024;
+    }
+
+    .introduction-container, 
     .interests-container, 
     .projects-overview-container, 
-    .cards-container, 
-    .home-project-item, 
-    .project-item,
-    .text-box, 
+    .cards-container,  
+    .project-item, 
     .email-button {
-        background-color: #48423E;
-        color: white;
-        border: 1px solid white;
+        color: #8cc7e9;
     }
+
+    .email-button {
+        color: #021024;
+        background-color: #8cc7e9;
+    }
+
+    .email-button:hover {
+        box-shadow: 0.15em 0.15em #C1E8FF;
+    }
+
+    nav a {
+        background-color: #8cc7e9;
+        color: #021024;
+    }
+
+    nav a:hover {
+        transform: translate(-0.15em, -0.15em);
+        box-shadow: 0.25em 0.25em #C1E8FF;
+    }
+
+    .home-project-item:hover {
+        box-shadow: 0.15em 0.15em #C1E8FF;
+    }
+    
+    .text-box {
+        background-color: #021024;
+        color: #8cc7e9;
+    }
+
+    .home-project-item {
+        background-color: #8cc7e9;
+        color: #021024;
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #8cc7e9; }
+      }
 }
