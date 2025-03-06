@@ -115,6 +115,10 @@ h3 a {
     text-decoration: none;
 }
 
+li {
+    font-size: 1.2rem;
+}
+
 .introduction-container {
     display: flex;
     flex-direction: row;
