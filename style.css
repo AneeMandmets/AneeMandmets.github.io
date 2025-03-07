@@ -417,14 +417,18 @@ li {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, footer {
-        background-color: #021024;
-        color: #8cc7e9;
+    html {
+        background-color: rgba(2,16,36,1);
     }
 
     body {
-        background: rgb(2,16,36);
-        background: linear-gradient(0deg, rgba(2,16,36,1) 0%, rgba(49,64,135,1) 100%) fixed;
+        background: linear-gradient(0deg, rgba(2,16,36,1) 0%, rgba(49,64,135,1) 100%);
+        color: #8cc7e9;
+    }
+
+    footer {
+        background-color: #021024;
+        color: #8cc7e9;
     }
 
     .project-item a {
