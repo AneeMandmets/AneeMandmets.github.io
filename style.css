@@ -352,11 +352,20 @@ li {
 }
 
 @media only screen and (max-width: 767px) {
+
+    main {
+        padding: 2rem;
+        margin: 10px;
+    }
     nav a {
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
     }
+
+    .typewriter {
+        letter-spacing: .001em; /* Adjust as needed */
+      }
 
     .introduction-container {
         flex-direction: column;
@@ -401,6 +410,35 @@ li {
     .projects-overview-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .projects-container {
+        padding: 5px 10px;
+        margin: 0 10px;
+    }
+
+    .project-item {
+        padding: 5px 10px;
+        margin: 20px 0;
+    }
+
+    .project-item-image {
+        max-width: 250px;
+        min-width: 250px;
+        min-height: 150px;
+        margin: 1.5rem;
+    }
+
+    .project-item-content {
+        flex-direction: column;
+    }
+
+    .video {
+        width: 100%;
+        max-width: 600px;
+        min-width: 200px;
+        min-height: 100px;
+        margin: 0.2rem;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
